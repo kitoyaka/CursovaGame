@@ -1,6 +1,5 @@
 package com.github.kitoyaka.CursovaGame.android
 
-import android.media.Image
 import android.os.Bundle
 
 import com.badlogic.gdx.backends.android.AndroidApplication
@@ -19,7 +18,7 @@ import ktx.log.logger
 
 class GameScreen : KtxScreen {
     private val spriteBatch: Batch = SpriteBatch()
-    private val texture: Texture = Texture("assets/BackScreen/MainMenu.jpg")
+    private val texture: Texture = Texture("MainMenu.jpg")
 
     override fun show() {
     }

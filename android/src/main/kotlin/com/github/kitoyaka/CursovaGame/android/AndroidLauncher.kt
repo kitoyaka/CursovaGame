@@ -19,17 +19,20 @@ import ktx.log.logger
 class GameScreen : KtxScreen {
     private val spriteBatch: Batch = SpriteBatch()
     private val texture: Texture = Texture("FON.jpg")
+    private val viewport: ExtendViewport = ExtendViewport(2400f, 1080f)
 
     override fun show() {
     }
     override fun render(delta: Float) {
-        spriteBatch.use { it.draw(texture,0f,0f) }
+        spriteBatch.use { it.draw(texture, 0f, 0f, viewport.worldWidth, viewport.worldHeight) }
     }
     override fun resize(width: Int, height: Int) {
+        viewport.update(width, height)
     }
     override fun dispose() {
     }
 }
+
 
 class MyGame : Game() {
     override fun create() {

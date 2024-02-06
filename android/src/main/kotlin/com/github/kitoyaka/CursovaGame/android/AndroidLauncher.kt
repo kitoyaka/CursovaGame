@@ -4,21 +4,17 @@ import android.os.Bundle
 
 import com.badlogic.gdx.backends.android.AndroidApplication
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration
-import com.github.kitoyaka.CursovaGame.CursovaGame
 import com.badlogic.gdx.Game
-import com.badlogic.gdx.Screen
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.Batch
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
-import com.badlogic.gdx.scenes.scene2d.Stage
 import com.badlogic.gdx.utils.viewport.ExtendViewport
 import ktx.app.KtxScreen
 import ktx.graphics.use
-import ktx.log.logger
 
 class GameScreen : KtxScreen {
     private val spriteBatch: Batch = SpriteBatch()
-    private val texture: Texture = Texture("FON 5.jpg")
+    private val texture: Texture = Texture("assets/FON6.4.2.png")
     private val viewport: ExtendViewport = ExtendViewport(2000f, 1100f)
 
     override fun show() {

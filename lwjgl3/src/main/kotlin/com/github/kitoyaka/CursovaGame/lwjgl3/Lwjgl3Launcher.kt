@@ -15,7 +15,7 @@ import ktx.graphics.use
 
 class GameScreen : KtxScreen {
     private val spriteBatch: Batch = SpriteBatch()
-    private val texture: Texture = Texture("FON.jpg")
+    private val texture: Texture = Texture("assets/graphics/FON6.4.2.png")
     private val viewport: ExtendViewport = ExtendViewport(texture.width.toFloat(), texture.height.toFloat())
 
     override fun show() {
@@ -23,7 +23,7 @@ class GameScreen : KtxScreen {
 
     override fun render(delta: Float) {
         spriteBatch.use {
-            it.draw(texture, 0f, 0f, viewport.worldWidth, viewport.worldHeight)
+            it.draw(texture, 0f, 0f)
         }
     }
 
@@ -50,7 +50,7 @@ fun main() {
       return
     Lwjgl3Application(CursovaGame(), Lwjgl3ApplicationConfiguration().apply {
         setTitle("Vampire")
-        setWindowedMode(1920, 1080)
+        setWindowedMode(1080, 720)
         setWindowIcon(*(arrayOf(128, 64, 32, 16).map { "libgdx$it.png" }.toTypedArray()))
     })
 }

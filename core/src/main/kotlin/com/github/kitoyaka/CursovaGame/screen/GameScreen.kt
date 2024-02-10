@@ -16,12 +16,12 @@ import java.awt.Image
 class GameScreen : KtxScreen {
     private val stage: Stage = Stage(ExtendViewport(16f,9f))
     private val spriteBatch: Batch = SpriteBatch()
-    private val texture: Texture = Texture("MAP.png")
+    private val texture: Texture = Texture("assets/MAIN BACKGROUND v2.png")
 
     override fun show() {
         stage.addActor(com.badlogic.gdx.scenes.scene2d.ui.Image(texture).apply {
-            setPosition(30f,30f)
-            setSize(500f,500f)
+            setPosition(1f,1f)
+            setSize(14f ,6f)
             setScaling(Scaling.fill)
         })
     }

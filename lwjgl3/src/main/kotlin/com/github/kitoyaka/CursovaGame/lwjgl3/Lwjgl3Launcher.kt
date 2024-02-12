@@ -16,7 +16,7 @@ fun main() {
         return
     Lwjgl3Application(CursovaGame(), Lwjgl3ApplicationConfiguration().apply {
         setTitle("Vampire")
-        setWindowedMode(1920, 1080)
+        setWindowedMode(1080, 720)
         setWindowIcon(*(arrayOf(128, 64, 32, 16).map { "libgdx$it.png" }.toTypedArray()))
     })
 }

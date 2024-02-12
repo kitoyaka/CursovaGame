@@ -18,7 +18,7 @@ import ktx.log.logger
 
 class GameScreen : KtxScreen {
     private val spriteBatch: Batch = SpriteBatch()
-    private val texture: Texture = Texture("FON 5.jpg")
+    private val texture: Texture = Texture("assets/MAIN BACKGROUND V2.png")
     private val viewport: ExtendViewport = ExtendViewport(2000f, 1100f)
 
     override fun show() {
